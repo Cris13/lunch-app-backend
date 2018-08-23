@@ -1,6 +1,7 @@
 package model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.springframework.lang.Nullable;
 
 import java.util.Date;
 
@@ -11,6 +12,7 @@ public class Items
 	private String message;
 	private String id;
 	private Date date;
+	@Nullable
 	private From from;
 
 	public String getType()

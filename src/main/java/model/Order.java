@@ -1,11 +1,10 @@
 package model;
 
-import java.util.List;
 
 public class Order
 {
 	private String dish;
-	private List<String> consumers;
+	private String hungry;
 
 	public String getDish()
 	{
@@ -17,13 +16,13 @@ public class Order
 		this.dish = dish;
 	}
 
-	public List<String> getConsumers()
+	public String getHungry()
 	{
-		return consumers;
+		return hungry;
 	}
 
-	public void setConsumers(List<String> consumers)
+	public void setHungry(String hungry)
 	{
-		this.consumers = consumers;
+		this.hungry = hungry;
 	}
 }
