@@ -8,31 +8,17 @@ import java.util.Date;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Items
 {
-	private String type;
-	private String message;
+	private String name;
 	private String id;
-	private Date date;
-	@Nullable
-	private From from;
 
-	public String getType()
+	public String getName()
 	{
-		return type;
+		return name;
 	}
 
-	public void setType(String type)
+	public void setName(String name)
 	{
-		this.type = type;
-	}
-
-	public String getMessage()
-	{
-		return message;
-	}
-
-	public void setMessage(String message)
-	{
-		this.message = message;
+		this.name = name;
 	}
 
 	public String getId()
@@ -43,25 +29,5 @@ public class Items
 	public void setId(String id)
 	{
 		this.id = id;
-	}
-
-	public Date getDate()
-	{
-		return date;
-	}
-
-	public void setDate(Date date)
-	{
-		this.date = date;
-	}
-
-	public From getFrom()
-	{
-		return from;
-	}
-
-	public void setFrom(From from)
-	{
-		this.from = from;
 	}
 }

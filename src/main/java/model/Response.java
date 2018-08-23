@@ -8,9 +8,7 @@ import java.util.List;
 public class Response
 {
 	List<Items> items;
-	Integer startIndex;
-	Integer maxResults;
-	Links links;
+
 
 	public List<Items> getItems()
 	{
@@ -22,33 +20,4 @@ public class Response
 		this.items = items;
 	}
 
-	public Integer getStartIndex()
-	{
-		return startIndex;
-	}
-
-	public void setStartIndex(Integer startIndex)
-	{
-		this.startIndex = startIndex;
-	}
-
-	public Integer getMaxResults()
-	{
-		return maxResults;
-	}
-
-	public void setMaxResults(Integer maxResults)
-	{
-		this.maxResults = maxResults;
-	}
-
-	public Links getLinks()
-	{
-		return links;
-	}
-
-	public void setLinks(Links links)
-	{
-		this.links = links;
-	}
 }
